@@ -13,34 +13,37 @@ The bot demonstrates:
 
 
 ## Project Structure
-
-trading_bot
+```
+trading_bot/
 |
-├── bot
+├── bot/
+|   ├── __init__.py
 │   ├── client.py
 │   ├── validators.py
 │   ├── logging_config.py
 │
-├── logs
+├── logs/
 │   └── trading.log
 │
 ├── cli.py
 ├── requirements.txt
-└── README.md
+├── README.md
+└── .gitignore
+```
 
 
 ## Installation
 
 1. Clone the repository
 
-git clone REPLACE_WITH_YOUR_GITHUB_LINK
+- git clone REPLACE_WITH_YOUR_GITHUB_LINK
 
-cd trading_bot
+- cd trading_bot
 
 
 2. Install dependencies
 
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 
 ## API Configuration
@@ -49,8 +52,8 @@ Create a file named **config.py** in the project folder and add your Binance Fut
 
 Example:
 
-API_KEY = "your_api_key_here"
-API_SECRET = "your_api_secret_here"
+- API_KEY = "your_api_key_here"
+- API_SECRET = "your_api_secret_here"
 
 
 
@@ -58,12 +61,12 @@ API_SECRET = "your_api_secret_here"
 
 Run a MARKET order:
 
-python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.002
+- python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.002
 
 
 Run a LIMIT order:
 
-python cli.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.002 --price 68000
+- python cli.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.002 --price 68000
 
 
 ## Logging
