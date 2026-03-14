@@ -36,7 +36,7 @@ trading_bot/
 
 1. Clone the repository
 
-- git clone REPLACE_WITH_YOUR_GITHUB_LINK
+- git clone https://github.com/riddhi-mudgal/trading-bot-binance.git
 
 - cd trading_bot
 
